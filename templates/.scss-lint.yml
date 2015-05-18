@@ -8,6 +8,10 @@ linters:
   DuplicateProperty:
     enabled: false
 
+  # We use to not add a space after comma in rgb colors, for example: rgba(0,0,0, .5)
+  SpaceAfterComma:
+    enabled: false
+
   # Sometimes we use certain string quotes just by convention
   StringQuotes:
     enabled: false
