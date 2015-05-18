@@ -1,13 +1,20 @@
 linters:
-  StringQuotes:
-    enabled: false
 
+  # Indent using tabs are the most flexible and readable
   Indentation:
     enabled: false
 
-  PropertySortOrder:
-    order:  # This order is based on SMACSS
+  # Sometimes we need to use duplicated properties for fallbacks, for example: both % and vw for width
+  DuplicateProperty:
+    enabled: false
 
+  # Sometimes we use certain string quotes just by convention
+  StringQuotes:
+    enabled: false
+
+  # Use the property order suggested by SMACSS
+  PropertySortOrder:
+    order:
       - content
 
       # Box
